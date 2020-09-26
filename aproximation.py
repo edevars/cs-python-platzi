@@ -1,7 +1,9 @@
+# Obtain square root
+
 objective = int(input('Select a number: '))
-epsilon = 0.01
-step = epsilon**2
-answer = 0.0
+epsilon = 0.1 # Error margin
+step = epsilon**2 # Distance that the algorithm travels
+answer = 0.0 # Acumulative variable that increases in each iteration one step
 
 while abs(answer**2 - objective) >= epsilon and answer <=objective:
     print(abs(answer**2 - objective), answer)
